@@ -106,7 +106,7 @@ main .hero-info h2 {
 
 main .hero-info p {
   margin-top: -1rem;
-  color: #a6cbeb;
+  color: #3a3a3a;
 }
 
 main .hero div button {
@@ -148,7 +148,7 @@ main .hero div button {
 .sections section:nth-child(2) div article {
   border: 1px solid #3a3a3a;
   padding: 0.5rem;
-  background-color: #4c96d7;
+  background-color: #a6cbeb;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -161,4 +161,9 @@ main .hero div button {
   bottom: -1.5rem;
   font-size: 1rem;
   margin: 0;
+}
+
+.error{
+  font-weight: bold;
+  margin-left: 1rem;
 }
