@@ -1,4 +1,4 @@
 <picture>
-    <img src="/phpmotors/images/site/logo.png" width="200" height="72">
+    <img src="/phpmotors/images/site/logo.png" alt="PHP Motors website logo." width="200" height="72">
 </picture>
-<p>My Account</p>
+<a href="/phpmotors/accounts/index.php?action=login">My Account</a>

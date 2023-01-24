@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Error | PHP Motors</title>
+    <title>Template | PHP Motors</title>
     <meta
       name="description"
-      content="Error Page for Fernando Arias in CSE 340: Web Backend Development 1 at Brigham Young University - Idaho"
+      content="Template Page for Fernando Arias in CSE 340: Web Backend Development 1 at Brigham Young University - Idaho"
   >
     <link rel="stylesheet" href="/phpmotors/css/normalize.css" media="screen">
     <link rel="stylesheet" href="/phpmotors/css/base.css" media="screen">
@@ -23,13 +23,13 @@
       <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/phpmotors/snippets/header.php'; ?>
     </header>
     <nav>
-      <?php 
-        // require_once $_SERVER['DOCUMENT_ROOT'] . '/phpmotors/snippets/navigation.php'; 
+      <?php
+        // require_once $_SERVER['DOCUMENT_ROOT'] . '/phpmotors/snippets/navigation.php';
+        echo $navList; 
       ?>
     </nav>
     <main>
-        <h1>Server Error</h1>
-        <p class="error">Sorry our server seems to be experiencing some technical difficulties. Please check back later.</p>
+        <h1>Content Title Here</h1>
     </main>
     <footer>
       <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/phpmotors/snippets/footer.php'; ?>

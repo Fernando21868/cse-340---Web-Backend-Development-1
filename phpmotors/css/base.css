@@ -167,3 +167,94 @@ main .hero div button {
   font-weight: bold;
   margin-left: 1rem;
 }
+
+main .form-container {
+  padding: 1rem;
+}
+
+main form {
+  color: #3a3a3a;
+  max-width: 20rem;
+  width: 100%;
+  margin: 0 auto;
+}
+
+main .title-form {
+  text-align: center;
+}
+
+form fieldset {
+  margin: 2rem 0;
+  border: 1px solid #3a3a3a;
+  padding: 0.5rem 1rem 1rem;
+}
+
+form legend {
+  color: #3a3a3a;
+  margin: 0 1rem;
+  padding: 0 0.5rem;
+}
+
+form label.top{
+  display: block;
+  padding-top: 1rem;
+  color: #3a3a3a;
+  font-size: 1rem;
+}
+
+form label.top input{
+  -webkit-appearance: none;
+  display: block;
+  font-size: 1rem;
+  border: solid 1px #3a3a3a;
+  padding: 0.75rem;
+  color: #3a3a3a;
+  width: 100%;
+  max-width: 20rem;
+}
+
+form label.top input:focus{
+  outline: none;
+  color: #3a3a3a;
+}
+
+form input.button {
+  text-align: center;
+  font-weight: bold;
+  width: 100%;
+  cursor: pointer;
+  padding: 0.5rem;
+  background-color: #4c96d7;
+}
+
+form input.button:hover {
+  background-color: #a6cbeb
+}
+
+form label.top input:required, form label.top select:required {
+  border: red solid 3px;
+}
+
+form label.top input:required:valid, form label.top select:required:valid {
+  border: green solid 3px;
+}
+
+main .register{
+  display: block;
+  text-align: center;
+}
+
+main .form-container p{
+  margin-bottom: -0.5rem;
+  font-weight: bold;
+}
+
+main .checkbox{
+  vertical-align: middle;
+}
+
+main .checkbox input{
+  margin: 10px 10px 0 0;
+  width: 15px;
+  height: 15px;
+}
