@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login | PHP Motors</title>
+    <title>Classification | PHP Motors</title>
     <meta
       name="description"
-      content="Login Page for Fernando Arias in CSE 340: Web Backend Development 1 at Brigham Young University - Idaho"
+      content="Classification Page for Fernando Arias in CSE 340: Web Backend Development 1 at Brigham Young University - Idaho"
   >
     <link rel="stylesheet" href="/phpmotors/css/normalize.css" media="screen">
     <link rel="stylesheet" href="/phpmotors/css/base.css" media="screen">
@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="favicon.ico?v=2">
   </head>
 <body>
   <div class="body">
@@ -28,23 +29,23 @@
       ?>
     </nav>
     <main>
-        <div class="form-container">
-            <h1 class="title-form">PHP Motors Login</h1>
+    <div class="form-container">
+            <h1 class="title-form">Add Car Classification</h1>
             <?php
               if (isset($message)) {
-              echo $message;
+                echo $message;
               }
             ?>
-            <form action="/phpmotors/accounts/index.php" method="post">
+            <form method="post" action="/phpmotors/vehicles/index.php">
                 <fieldset>
-                    <legend>Sign In</legend>
-                    <label class="top">Password* <input type="password" id="clientPassword" name="clientPassword" required></label>
-                    <label class="top">Email* <input type="email" id="clientEmail" name="clientEmail" placeholder="someone@gmail.com" required></label>
+                    <legend>Classification</legend>
+                    <label class="top">Classification Name* <input type="text" id="cname" name="classificationName" required></label>
                 </fieldset>
-                <input type="submit" id="signIn" value="Sign In" class="button"> 
+                <input type="submit" name="submit" id="regclassbtn" value="Registerclass" class="button">
+                <!-- Add the action name - value pair -->
+                <input type="hidden" name="action" value="add-classification">
             </form>
         </div>
-        <a class="register" href="/phpmotors/accounts/index.php?action=register-page" id="toreg">Not a member yet?</a>
     </main>
     <footer>
       <?php require_once $_SERVER['DOCUMENT_ROOT'] . '/phpmotors/snippets/footer.php'; ?>

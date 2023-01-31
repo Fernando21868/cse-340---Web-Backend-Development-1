@@ -29,6 +29,16 @@ body {
   justify-content: space-between;
 }
 
+.body header a{
+  text-decoration: none;
+  color: #3a3a3a;
+  font-weight: bold;
+}
+
+.body header a:hover{
+  color: #000;
+}
+
 nav {
   background-color: #3a3a3a;
 }
@@ -202,6 +212,8 @@ form label.top{
   font-size: 1rem;
 }
 
+form label.top select,
+form label.top textarea,
 form label.top input{
   -webkit-appearance: none;
   display: block;
@@ -213,6 +225,8 @@ form label.top input{
   max-width: 20rem;
 }
 
+form label.top select:focus,
+form label.top textarea:focus,
 form label.top input:focus{
   outline: none;
   color: #3a3a3a;
@@ -231,11 +245,11 @@ form input.button:hover {
   background-color: #a6cbeb
 }
 
-form label.top input:required, form label.top select:required {
+form label.top input:required, form label.top select:required, form label.top textarea:required {
   border: red solid 3px;
 }
 
-form label.top input:required:valid, form label.top select:required:valid {
+form label.top input:required:valid, form label.top select:required:valid, form label.top textarea:required:valid {
   border: green solid 3px;
 }
 
@@ -257,4 +271,21 @@ main .checkbox input{
   margin: 10px 10px 0 0;
   width: 15px;
   height: 15px;
+}
+
+.message {
+  font-weight: bold;
+  max-width: 20rem;
+  text-align: center;
+  margin: auto;
+  border: 1px solid #3a3a3a;
+  padding: 1rem;
+}
+
+.message.error {
+  background-color: hsla(0, 100%, 50%, 0.7);
+}
+
+.message.success {
+  background-color: hsla(120, 100%, 25%, 0.7);
 }
